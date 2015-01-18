@@ -22,6 +22,10 @@ input, button
        url(font-icon-path + ".ttf?v=#" + font-icon-version) format("truetype"),
        url(font-icon-path + ".svg#fontawesomeregular?v=#" + font-icon-version) format("svg")
 
+*
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+
 html, body, #container
   height: 100%
 
@@ -86,5 +90,3 @@ if sidebar is left
 
 if sidebar
   @import "_partial/sidebar"
-
-@import "_custom/header"

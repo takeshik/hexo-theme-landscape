@@ -30,8 +30,9 @@
 
 .article-title
   text-decoration: none
-  font-size: 2em
-  font-weight: bold
+  font-family: font-title
+  font-size: 2.2em
+  font-weight: 500
   color: color-default
   line-height: line-height-title
   transition: color 0.2s
@@ -45,8 +46,9 @@
   padding: 0 article-padding
   p, table
     line-height: line-height
-    margin: line-height 0
+    margin: 1.4em 0
   h1, h2, h3, h4, h5, h6
+    font-family: font-heading
     font-weight: bold
   h1, h2, h3, h4, h5, h6
     line-height: line-height-title
@@ -78,10 +80,18 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
-    font-family: font-serif
+    // font-family: font-serif
     font-size: 1.4em
     margin: line-height 20px
-    text-align: center
+    quotes: "\201c" "\201d" "\2018" "\2019"
+    border-left: 4px solid color-border
+    :before
+      color: color-background
+      content: open-quote
+      font-size: 2em
+      line-height: 0.1em
+      margin-right: 0.25em
+      vertical-align: 0.4em
     footer
       font-size: font-size
       margin: line-height 0
@@ -213,9 +223,9 @@
 
 .article-nav-caption
   text-transform: uppercase
-  letter-spacing: 2px
+  letter-spacing: 1px
   color: color-border
-  line-height: 1em
+  line-height: 2em
   font-weight: bold
   #article-nav-newer &
     margin-right: -2px
