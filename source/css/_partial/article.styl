@@ -80,18 +80,29 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
-    // font-family: font-serif
-    font-size: 1.4em
-    margin: line-height 20px
+    font-size: 1.2em
     quotes: "\201c" "\201d" "\2018" "\2019"
     border-left: 4px solid color-border
-    :before
-      color: color-background
+    border-right: 4px solid color-border
+    &:before, &:after
+      font-family: font-mono
+      color: color-border
+      font-size: 3em
+      line-height: 0.9em
+    &:before
       content: open-quote
-      font-size: 2em
-      line-height: 0.1em
-      margin-right: 0.25em
-      vertical-align: 0.4em
+      float: left
+      position: relative
+      left: 0.05em
+    &:after
+      content: close-quote
+      float: right
+      position: relative
+      top: -0.5em
+      right: 0.05em
+    p
+      margin: 0
+      padding: 0.25em 2em
     footer
       font-size: font-size
       margin: line-height 0

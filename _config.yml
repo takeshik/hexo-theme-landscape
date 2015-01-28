@@ -1,7 +1,7 @@
 # Header
 menu:
   Home: /
-  Blog: /blog
+  Blog: /blog/archives
   About: /about
 rss: /atom.xml
 
@@ -20,7 +20,7 @@ widgets:
 
 # Miscellaneous
 google_analytics: UA-40684400-1
-favicon: /favicon.png
+favicon: true
 twitter: takeshik
 google_plus: TakeshiKiriya26
 fb_admins: 100000020754195
