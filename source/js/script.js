@@ -134,4 +134,9 @@
 
     $container.removeClass('mobile-nav-on');
   });
+
+  var $lazyImgs = $('img[data-original]');
+  if ($lazyImgs.length > 0) {
+    $lazyImgs.lazyload({ effect: 'fadeIn' });
+  }
 })(jQuery);
