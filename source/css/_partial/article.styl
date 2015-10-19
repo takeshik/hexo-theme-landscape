@@ -299,6 +299,16 @@ $article-share-link
     background: color-twitter
     text-shadow: 0 1px darken(color-twitter, 20%)
 
+.article-share-hatena
+  @extend $article-share-link
+  &:before
+    font-family: Verdana
+    font-weight: bold
+    content: "B!"
+  &:hover
+    background: color-hatena
+    text-shadow: 0 1px darken(color-hatena, 20%)
+
 .article-share-facebook
   @extend $article-share-link
   &:before
