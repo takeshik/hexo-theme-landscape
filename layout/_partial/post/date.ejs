@@ -1,3 +1,7 @@
 <a href="<%- url_for(post.path) %>" class="<%= class_name %>">
+<<<<<<< HEAD
   <time class="dt-published" datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, date_format) %></time>
+=======
+  <time title="<%= date(post.date, 'YYYY-MM-DD HH:mm:ss') %> (updated at: <%= date(post.updated, 'YYYY-MM-DD HH:mm:ss') %>)" datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, date_format) %></time>
+>>>>>>> 54a806c (Add GitHub link, timestamp tip)
 </a>
